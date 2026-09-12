@@ -2,8 +2,7 @@
 
 ---
 
-
-一个轻量、美观的桌面灵感计数小组件
+一个桌面计数小组件
 
 ---
 
@@ -11,16 +10,26 @@
 
 * **核心框架**: Tauri (Rust 后端)
 * **前端构建**: Vite + HTML / CSS / JavaScript
-* **数据持久化**: `localStorage` (本地安全存储)
 
 ---
 
+## 开箱即用
+
+下载prague-counter.exe，双击即可想念布拉格
+
 ## 🚀 快速开始（开发模式）
 
-如果你想在本地继续开发或调试：
+Tauri文档：https://v2.tauri.app/
+根据文档指示，新建一个项目
+
+将index.html下载到项目根目录，覆盖掉原来的index.html（如有）
+将main.js下载到项目根目录的/src下
+
+
+在本地继续开发或调试：
 
 1. **安装依赖**：
-确保已安装 Node.js、pnpm 和 Rust 环境，然后在项目根目录下执行：
+确保已安装相关 （参考：Node.js、pnpm 和 Rust） 环境，然后在项目根目录下执行：
 ```bash
 pnpm install
 
@@ -32,10 +41,8 @@ pnpm install
 pnpm tauri dev
 
 ```
+修改index.html文件，即可改变组件外观
 
-
-
-> 💡 **避坑提示**：请将项目存放在纯本地磁盘路径中（避免直接在网盘或云同步盘内编译，以防触发文件锁导致编译报错）。
 
 ---
 
@@ -51,7 +58,7 @@ pnpm tauri build
 
 
 2. **获取成品**：
-打包完成后，前往 `src-tauri/target/release/` 目录，即可找到编译好的 `.exe` 软件本体。它可以独立发送给朋友使用，无需配置任何开发环境。
+打包完成后，前往 `src-tauri/target/release/` 目录，即可找到编译好的 `.exe` 软件本体。可以独立发送给朋友使用。
 
 ---
 
