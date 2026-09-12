@@ -29,7 +29,7 @@ Tauri文档：https://v2.tauri.app/
 在本地继续开发或调试：
 
 1. **安装依赖**：
-确保已安装相关 （参考：Node.js、pnpm 和 Rust） 环境，然后在项目根目录下执行：
+根据tauri的提示，确保已安装相关 （参考：Node.js、pnpm 和 Rust） 环境，然后在项目根目录下执行：
 ```bash
 pnpm install
 
@@ -105,4 +105,4 @@ pnpm tauri icon ./icon.png
 
 ## 💾 数据持久化说明
 
-计数数据通过浏览器底层的 `localStorage` 自动保存在用户的本地系统安全目录中。只要保持 `src-tauri/tauri.conf.json` 中的应用标识符 (`identifier`) 不变，每次发布新版本的 `.exe` 覆盖旧版本时，**历史计数数据会自动无缝衔接，绝不会清零**。
+计数数据通过浏览器底层的 `localStorage` 自动保存在用户的本地系统安全目录中。只要保持 `src-tauri/tauri.conf.json` 中的应用标识符 (`identifier`) 不变，每次发布新版本的 `.exe` 覆盖旧版本时，**历史计数数据会自动无缝衔接，不会清零**。
