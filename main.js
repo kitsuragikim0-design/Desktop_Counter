@@ -1,4 +1,4 @@
-// 尝试从浏览器本地存储（LocalStorage）中读取之前的计数
+// 从浏览器本地存储中读取之前的计数
 let count = localStorage.getItem('prague_count') ? parseInt(localStorage.getItem('prague_count')) : 0;
 
 const countDisplay = document.getElementById('count-display');
@@ -17,6 +17,6 @@ clickBtn.addEventListener('click', () => {
     // 保存到本地
     localStorage.setItem('prague_count', count);
     
-    // 可以在这里加一点控制台输出，确认点击生效
+    // 确认点击生效
     console.log(`灵感 +1，当前总数：${count}`);
 });
