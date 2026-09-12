@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <title>Prague Spark</title>
     <style>
-        /* 让窗口背景透明，只展示我们的精美组件 */
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            /* 核心修改：引入你的图片，并让它铺满、不平铺、居中 */
             background-image: url('https://i.pinimg.com/1200x/38/29/bc/3829bcbf9be873213e6a131fe01538a3.jpg');
-            background-size: cover;          /* 让图片自动缩放并铺满整个屏幕 */
-            background-position: center;     /* 图片居中显示 */
-            background-repeat: no-repeat;    /* 防止图片平铺重复 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-            background-color: transparent; /* 确保背景透明 */
+            background-color: transparent;
             margin: 0;
             
             display: flex;
@@ -22,11 +20,10 @@
             height: 100vh;
             user-select: none;
         }
-
-        /* 桌面小组件卡片 */
+        
         .widget-card {
             background: rgba(220, 183, 104, 0.233);
-            backdrop-filter: blur(12px); /* 毛玻璃效果 */
+            backdrop-filter: blur(12px); /* 模糊效果 */
             border-radius: 16px;
             padding: 20px 30px;
             text-align: center;
@@ -37,7 +34,7 @@
         }
 
         .widget-card:active {
-            transform: scale(0.96); /* 点击时微微下陷的反馈 */
+            transform: scale(0.96); 
         }
 
         .title {
@@ -58,7 +55,6 @@
 </head>
 <body>
 
-    <!-- 整个卡片就是一个按钮 -->
     <div class="widget-card" id="click-btn">
         <div class="title">Prague Spark</div>
         <div class="counter-value" id="count-display">0</div>
